@@ -1,6 +1,3 @@
-﻿-- ts file was generated at discord.gg/25ms
-
-
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(19, 255, 3)
 game.Lighting.MainColorCorrection.Contrast = 10
 game:GetService("TweenService"):Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {
