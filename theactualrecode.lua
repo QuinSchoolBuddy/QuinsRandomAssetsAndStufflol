@@ -522,7 +522,7 @@ local function checkEntityDistance()
             local rushPart = rushMoving:FindFirstChildWhichIsA("BasePart")
             if rushPart then
                 local distance = (hrp.Position - rushPart.Position).Magnitude
-                if distance <= 250 then
+                if distance <= 1000 then
                     shouldEnable = true
                 end
             end
@@ -534,7 +534,7 @@ local function checkEntityDistance()
             local ambushPart = ambushMoving:FindFirstChildWhichIsA("BasePart")
             if ambushPart then
                 local distance = (hrp.Position - ambushPart.Position).Magnitude
-                if distance <= 250 then
+                if distance <= 1000 then
                     shouldEnable = true
                 end
             end
@@ -546,7 +546,7 @@ local function checkEntityDistance()
             local backdoorPart = backdoorRush:FindFirstChildWhichIsA("BasePart")
             if backdoorPart then
                 local distance = (hrp.Position - backdoorPart.Position).Magnitude
-                if distance <= 250 then
+                if distance <= 1000 then
                     shouldEnable = true
                 end
             end
@@ -2728,3 +2728,4 @@ end
 
 wait(0.2)
 Window:Show()
+
